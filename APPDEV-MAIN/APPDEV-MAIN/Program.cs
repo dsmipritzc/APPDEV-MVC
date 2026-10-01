@@ -30,6 +30,7 @@ namespace APPDEV_MAIN
                 pattern: "{controller=Home}/{action=Index}/{id?}")
                 .WithStaticAssets();
 
+            Console.WriteLine("RELEASE BRANCH");
             app.Run();
         }
     }
