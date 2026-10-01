@@ -18,7 +18,13 @@ namespace APPDEV_MAIN.Controllers
 
         public IActionResult Member2()
         {
-            return View();
+            Member2Information() member = new Member2Information();
+
+            member.FullName = "RC FRITZ T. CLEMENTE";
+            member.Id = 67000;
+            member.Address = "Sitio Bayag";
+
+            return View(member);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
