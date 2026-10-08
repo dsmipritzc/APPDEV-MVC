@@ -18,9 +18,10 @@ namespace APPDEV_MAIN.Controllers
 
         public IActionResult Member2()
         {
-            Member2Information() member = new Member2Information();
+            Member2Information member = new Member2Information();
 
-            member.FullName = "RC FRITZ T. CLEMENTE";
+            member.FirstName = "RC FRITZ";
+            member.LastName = "CLEMENTE";
             member.Id = 67000;
             member.Address = "Sitio Bayag";
 

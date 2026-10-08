@@ -1,13 +1,29 @@
-﻿@{
+﻿@model APPDEV_MAIN.Models.Member2Information;
+
+@{
     ViewData["Title"] = "Member 2";
 }
 
-<div class="text-center">
-    <h1 class="display-4">WELCOME MGA MANIGHAS</h1>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/Member2Design.css" />
+}
+
+<div class="background-image-container">
+
 </div>
 
-<div>
-    <h3>Id: </h3>
-    <h3>Name: </h3>
-    <h3>Address: </h3>
+<div class="information-container">
+    <div class="profile-picture">
+        <img src="~/Images/Profile.png" alt="A picture of me"/>
+    </div>
+
+    <div class="information">
+        <h3>Id: </h3>
+        <p>@Model.Id</p>
+        <h3>Name: </h3>
+        <p>@Model.FullName</p>
+        <h3>Address: </h3>
+        <p>@Model.Address</p>
+    </div>
 </div>

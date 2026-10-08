@@ -1,0 +1,22 @@
+﻿:root {
+    --darkblack: hsl(0, 0%, 5%);
+    --midblack: hsl(0, 0%, 10%);
+    --lightblack: hsl(0, 0%, 15%);
+    --transblack: hsl(0, 0%, 15%, 0.7);
+    --transwhite: hsl(0, 0%, 85%, 0.3);
+    --lightwhite: hsl(0, 0%, 95%);
+    --midwhite: hsl(0, 0%, 90%);
+    --darkwhite: hsl(0, 0%, 70%);
+    --blue: hsl(209, 95%, 48%);
+}
+
+.background-image-container {
+    border: 3px solid var(--darkwhite);
+    border-radius: 25px;
+    height: 50vh;
+}
+
+.profile-picture img {
+    width: 300px;
+}
+
