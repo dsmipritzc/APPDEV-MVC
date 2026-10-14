@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Member 2";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/Member2Design.css" />
+}
+
+@model APPDEV_MAIN.Models.Member2Information;
+
+<div class="introduction-container">
+    <h1>@Model.FullName</h1>
+    <p>PUP Student | Web Developer | <strong>Mabait</strong></p>
+    <div class="contacts-container">
+        <a href="#">✉️ Email</a>
+        <a href="#">💼 LinkedIn</a>
+        <a href="#">🐙 GitHub</a>
+        <a href="#">📘 Facebook</a>
+    </div>
+</div>
+
+<div class="object-container about-me-container">
+    <h2>About Me</h2>
+    <div class="about-me-content">
+        <div class="profile-picture">
+            <img src="~/Images/Profile.png" alt="A picture of me"/>
+        </div>
+        <div class="about-me">
+            <p><strong>Hello there!</strong> I'm a student with a passion for learning and exploring new things, especially emerging technologies that are shaping the future.</p>
+            <br />
+            <p>I'm always looking for opportunities to grow my skills, challenge myself, and turn my ideas into something meaningful. 
+               I'm also working toward my goal of becoming a successful entrepreneur and, one day, achieving financial freedom and becoming a millionaire.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="object-container information-container">
+    <h2>My Profile</h2>
+    <div class="information-content">
+        <div class="information-items">
+            <p>Full name</p>
+            <h4>@Model.FullName</h4>
+        </div>
+        <div class="information-items">
+            <p>Birthday</p>
+            <h4>@Model.Birthday</h4>
+        </div>
+        <div class="information-items">
+            <p>Address</p>
+            <h4>@Model.Address</h4>
+        </div>
+        <div class="information-items">
+            <p>Phone number</p>
+            <h4>@Model.Phone</h4>
+        </div>
+        <div class="information-items">
+            <p>Id number</p>
+            <h4>@Model.Id</h4>
+        </div>
+    </div>
+</div>
+
+<div class="object-container skills-container">
+    <h2>My Tech Skills</h2>
+    <div class="skills-content">
+        <div class="skills-items">
+            <h4>Frontend</h4>
+            <p>HTML, CSS, JS</p>
+        </div>
+        <div class="skills-items">
+            <h4>Tools</h4>
+            <p>VS Code, VS Studio, Git, Github</p>
+        </div>
+        <div class="skills-items">
+            <h4>AI</h4>
+            <p>ChatGPT, Claude, Hermes</p>
+        </div>
+    </div>
+</div>
