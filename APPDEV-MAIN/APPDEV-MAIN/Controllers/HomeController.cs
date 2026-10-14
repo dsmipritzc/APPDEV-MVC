@@ -21,8 +21,11 @@ namespace APPDEV_MAIN.Controllers
             Member2Information member = new Member2Information();
 
             member.FirstName = "RC FRITZ";
+            member.MiddleInitial = "T";
             member.LastName = "CLEMENTE";
-            member.Id = 67000;
+            member.Birthday = "February 29, 2007";
+            member.Phone = "+639679116789";
+            member.Id = "87000JLBDLVRY";
             member.Address = "Sitio Bayag";
 
             return View(member);

@@ -1,22 +1,154 @@
 ﻿:root {
-    --darkblack: hsl(0, 0%, 5%);
-    --midblack: hsl(0, 0%, 10%);
-    --lightblack: hsl(0, 0%, 15%);
-    --transblack: hsl(0, 0%, 15%, 0.7);
-    --transwhite: hsl(0, 0%, 85%, 0.3);
-    --lightwhite: hsl(0, 0%, 95%);
-    --midwhite: hsl(0, 0%, 90%);
-    --darkwhite: hsl(0, 0%, 70%);
-    --blue: hsl(209, 95%, 48%);
+    --shadow: rgba(60, 64, 67, 0.15);
+    --bg-body: #f8f9fa;
+    --bg-card-hover: #e8eaed;
+    --bg-card: #f1f3f4;
+    --text-main: #202124;
+    --text-muted: #5f6368;
+    --border-color: #dadce0;
+    --highlight-text: #2563EB;
+    --blue-hover-bg: #e8f0fe;
+    --blue: #4285f4;
 }
 
-.background-image-container {
-    border: 3px solid var(--darkwhite);
+
+.introduction-container {
     border-radius: 25px;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
 }
 
-.profile-picture img {
-    width: 300px;
+.introduction-container h1 {
+    font-size: 7.5vh;
+    margin-bottom: 15px;
 }
+
+.introduction-container p {
+    font-size: 2.5vh;
+    color: var(--lightblack);
+}
+
+.information-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.information-items {
+    min-width: 200px;
+    flex: 1 1 30%;
+    padding: 20px;
+    border: 3px solid var(--darkwhite);
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.information-items:hover {
+    transform: translateY(-5px);
+    background-color: var(--bg-card-hover);
+}
+
+.information-content p {
+    color: var(--text-muted);
+}
+
+.introduction-container .contacts-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.contacts-container a {
+    text-decoration: none;
+    padding: 8px 24px 10px 24px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.contacts-container a:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+    background-color: var(--blue-hover-bg);
+}
+
+.object-container {
+    width: 150vh;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 16px;
+    background-color: var(--bg-body);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.object-container h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.about-me-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-content .profile-picture {
+    display: flex;
+    justify-content: center;
+    border: 3px solid var(--lightblack);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.about-me-content img {
+    width: 24vh;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.about-me {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.skills-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-items {
+    min-width: 200px;
+    flex: 1 1 30%;
+    padding: 20px;
+    border: 3px solid var(--darkwhite);
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-items:hover {
+    transform: translateY(-5px);
+    background-color: var(--bg-card-hover);
+}
+
+.skills-items p {
+    color: var(--text-muted);
+}
+
+
+
 
