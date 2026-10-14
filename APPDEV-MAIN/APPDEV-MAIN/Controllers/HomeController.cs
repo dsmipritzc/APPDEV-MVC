@@ -27,6 +27,7 @@ namespace APPDEV_MAIN.Controllers
 
             return View(member);
         }
+        
         public IActionResult Member2()
         {
             Member2Information member = new Member2Information();
