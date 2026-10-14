@@ -31,6 +31,19 @@ namespace APPDEV_MAIN.Controllers
             return View(member);
         }
 
+        public IActionResult Member3()
+        {
+            Member3Information member = new Member3Information();
+
+            member.FullName = "Jhon Gabriel I. Barrera";
+            member.Course = "BS Computer Science Student";
+            member.About = "Hello! I am a Computer Science student who wants to learn more about programming and technology.";
+            member.Hobbies = "I enjoy watching anime, listening to music, and playing some games.";
+            member.Email = "barrerajhongabriel@gmail.com";
+
+            return View(member);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
