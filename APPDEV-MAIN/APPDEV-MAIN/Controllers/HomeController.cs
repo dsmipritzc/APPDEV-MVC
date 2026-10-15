@@ -38,7 +38,7 @@ namespace APPDEV_MAIN.Controllers
             member.Birthday = "February 29, 2007";
             member.Phone = "+639679116789";
             member.Id = "87000JLBDLVRY";
-            member.Address = "Sitio Bayag";
+            member.Address = "Sitio Nabunturan";
 
             return View(member);
         }
