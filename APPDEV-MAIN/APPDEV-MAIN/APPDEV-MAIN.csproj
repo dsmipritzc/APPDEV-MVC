@@ -7,4 +7,10 @@
     <RootNamespace>APPDEV_MAIN</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\Member2Design.css" />
+    <None Include="wwwroot\Images\background-image.jpg" />
+    <None Include="wwwroot\Images\Profile.png" />
+  </ItemGroup>
+
 </Project>

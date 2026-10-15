@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "MEMBER 1";
+}
+
+<link rel="stylesheet" href="~/css/Member1.css" asp-append-version="true" />
+
+<div class="welcome">
+    <h1 id="hi">WELCOME DRE</h1>
+    <img src="../Images/hi.gif" height="100" alt="Waving Picture">
+</div>
+<br>
+
+<img src="../Images/pictureko.jpg" height="95" id="picko" alt="Profile Picture">
+
+<div class="information">
+<pre id="data">
+<b>ID:</b> @Model.ID
+<b>Full Name:</b> @Model.FirstName @Model.LastName
+<b>Field:</b> @Model.Specialty 
+</pre>
+</div>
+
+<pre id="description">
+
+    Hi pwede maghello? I am Kye, a Computer Science student who likes Software Development, 
+    Artificial Intelligence, Machine Learning, and such. I love playing Valorant, League, 
+    and other mechanic heavy games. Ascendant II peak di naliligo. Nahihiya makipagsocialize 
+    pag di ina-approach gahahhagaha lasmo dre.
+
+</pre>
+
+<img src="../Images/cryingg.gif" height="140" id="crying">
+
+<div class="links">
+<a href="https://www.linkedin.com/in/cs-kye/" target="_blank" title="Goes to LinkedIn Profile">
+    <button id="LinkedIn">
+        LinkedIn
+    </button>
+</a>
+<br>
+<a href="https://github.com/jn-kye" target="_blank" title="Goes to GitHub Profile">
+    <button id="GitHub">
+        GitHub
+    </button>
+</a>
+<a href="mailto:johnkylle.colcol12@gmail.com" target="_blank" title="Goes to Email">
+    <button id="Email">
+        Email
+    </button>
+</a>
+<a href="https://open.spotify.com/user/312m22ps7boaguvnqprtbvgvjmra?si=f8e0e230f7234d62" target="_blank" title="Goes to Spotify">
+    <button id="Spotify">
+        Spotify
+    </button>
+</a>
+</div>
+
